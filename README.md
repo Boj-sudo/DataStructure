@@ -19,14 +19,16 @@ In the electrical field, students  who are oblivious of the structure and the cu
 The problem is having to compute the current through a specific nodal(paths), thus this also depicts current through paths.
 People who are oblivious of the structure and the current flow directions of an electrical circuit this program will be the source
 
-![image](data/example.png)
-
 
 ## Solution
 - Nodes represent Resistors and one for a voltage source
 - Edges represent current through resistors
 - Traversals represent the path with the smallest amount of current
 - This is represented thus because current moves through paths(wires in a circuit) so the provide direction to a resistor.
+
+
+## How it looks
+![image](data/example.png)
 
 
 ## Conclusion
