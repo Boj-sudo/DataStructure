@@ -27,6 +27,8 @@ public class Controller implements Runnable {
 	@FXML
 	public TextField txt_mine;
 	@FXML
+	public TextField truck_0;
+	@FXML
 	public TextField truck_1;
 	@FXML
 	public TextField truck_2;
