@@ -1,4 +1,4 @@
-# Trying to fix the load shedding using Data Structure
+# Building Circuit using Data Structure
 
 ## Technogies used
 - Java
@@ -10,23 +10,27 @@
 - dist – that contains an executable jar file
 
 ## Introduction
+The current flow program deals with depicting the structure of an electric circuit and the positioning of the electric components in the circuit.
+It depicts the current flow in parallel and series resistors. Thus, to distinguish between the amount of current flowing into a resistor or number of resistors
+In the electrical field, students  who are oblivious of the structure and the current flow directions this program will be the source.
 
-Load shedding is a  measure of last resort to prevent the collapse of power system country-wide.
-Load shedding happens when there is not enough electricity available to meet the demand of all customers.
-Since we all saw south Africa as a nation  suffered from this blackout then I thought if we can come up with solutions to lower the amount of load shedding by  constructing the additional power stations and provide new generators, also the use of renewable energy because when there is insufficient power station capacity to supply the demand from all the customers, the electricity system becomes unbalanced which cause it to trip out country-wide and which could take days to restore.
 
 ## Problem
-The problem is that when there is insufficient power station capacity to supply the demand from all the customers, the electricity system becomes unbalanced which can cause it to shut out the country wide and which could take days to restore.
-When there is load shedding , compatriots suffer because the networks are switched off
-Load shedding is a real problem in the developing and emerging markets and takes a big hit on the economy.
+The problem is having to compute the current through a specific nodal(paths), thus this also depicts current through paths.
+People who are oblivious of the structure and the current flow directions of an electrical circuit this program will be the source
+
+![image](data/example.png)
+
 
 ## Solution
-- Vertex represent vehicles(trucks) and for new generators.
-- Edges represent weight and costs of coals.
-- Traversals represent the path with the smallest amount of coals, the actual traversals will be transporting enough and balanced electricity in the housing from power stations.
+- Nodes represent Resistors and one for a voltage source
+- Edges represent current through resistors
+- Traversals represent the path with the smallest amount of current
+- This is represented thus because current moves through paths(wires in a circuit) so the provide direction to a resistor.
+
 
 ## Conclusion
-In conclusion I couldn’t manage to achieve what I intended to do to solve the issue of loadshedding(blackout) but still working on it in attempt to solve the problem. 
+In conclusion I couldn’t manage to achieve what I intended to do but most were successful and still working on it in attempt to solve the problem. 
 
 
 
