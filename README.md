@@ -1,5 +1,14 @@
 # Trying to fix the load shedding using Data Structure
 
+## Technogies used
+- Java
+- JavaFx
+- Eclipse IDE
+
+## The project contains the following directory structure:
+- src – that contains all of the Java source files.
+- dist – that contains an executable jar file
+
 ## Introduction
 
 Load shedding is a  measure of last resort to prevent the collapse of power system country-wide.
