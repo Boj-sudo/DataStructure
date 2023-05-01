@@ -1,5 +1,11 @@
 package data_structure;
 
+/**
+ * 
+ * @author Tsietsi Maboa
+ *
+ * @param <T>
+ */
 public interface List<T> {
 
 	T get(Integer i);

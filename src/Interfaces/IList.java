@@ -1,6 +1,12 @@
 package Interfaces;
 import data_structure.Position;
 
+/**
+ * 
+ * @author Tsietsi Maboa
+ *
+ * @param <T>
+ */
 public interface IList<T> extends Iterable<T> {
 	Position<T> addAfter(Position<T> position, T item);
 	Position<T> addBefore(Position<T> position, T item);

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+<?import javafx.scene.control.ListView?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.ScrollPane?>
+
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Sphere?>
+
+<VBox spacing="10" alignment="CENTER" prefWidth="300" prefHeight="300" fx:controller="elec_circuit.Controller" xmlns:fx="http://javafx.com/fxml">
+ 
+ 	<fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+    
+    
+    <VBox alignment="CENTER" prefHeight="10" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+     <children>
+        <Label fx:id="project_name"  text="Current Flow" textAlignment="CENTER">
+           <font>
+              <Font name="Actor" size="35.0" />
+           </font>
+        </Label>
+     </children>
+   </VBox>
+   
+     <AnchorPane  prefHeight="460.0" prefWidth="100.0">
+                     <children>
+                        <ScrollPane prefHeight="173.0" prefWidth="445.0" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="15" AnchorPane.rightAnchor="15" AnchorPane.topAnchor="15">
+                           <content>
+                              <AnchorPane prefHeight="778.0" prefWidth="1096.0">
+                                 <children>
+                                 
+                                 <Rectangle  fill="WHITE" height="4.0" layoutX="10.0" layoutY="51.0" stroke="RED" strokeType="INSIDE"  width="350" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" width="4.0" layoutX="10.0" layoutY="51.0" stroke="RED" strokeType="INSIDE"  height="250" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" height="4.0" layoutX="14.0" layoutY="151.0" stroke="RED" strokeType="INSIDE"  width="250" arcHeight="20.0" arcWidth="20.0" />
+                                   <Rectangle fill="WHITE" width="4.0" layoutX="260.0" layoutY="102.0" stroke="RED" strokeType="INSIDE"  height="350" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" height="4.0" layoutX="12.0" layoutY="297.0" stroke="RED" strokeType="INSIDE"  width="250" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" height="4.0" layoutX="260.0" layoutY="200.0" stroke="RED" strokeType="INSIDE"  width="250" arcHeight="20.0" arcWidth="20.0" />
+                                   <Rectangle fill="WHITE" height="4.0" layoutX="260.0" layoutY="351" stroke="RED" strokeType="INSIDE"  width="250" arcHeight="20.0" arcWidth="20.0" />
+                                   <Rectangle fill="WHITE" height="4.0" layoutX="260.0" layoutY="450" stroke="RED" strokeType="INSIDE"  width="250" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" height="350" layoutX="509.0" layoutY="105" stroke="RED" strokeType="INSIDE"  width="4.0" arcHeight="20.0" arcWidth="20.0" />
+                                  <Rectangle fill="WHITE" height="4.0" layoutX="260" layoutY="102" stroke="RED" strokeType="INSIDE"  width="270" arcHeight="20.0" arcWidth="20.0" />
+                                 
+                                   <Rectangle fill="WHITE" width="4.0" layoutX="355" layoutY="51" stroke="RED" strokeType="INSIDE"  height="51" arcHeight="20.0" arcWidth="20.0" />
+                                    <TextField fx:id="txt_ground" accessibleRole="TEXT" disable="true" editable="false" layoutX="555" layoutY="68"  text="Ground Node" />
+                                   <Rectangle fill="WHITE" width="4.0" layoutX="528" layoutY="78" stroke="BLUE" strokeType="INSIDE"  height="51" arcHeight="20.0" arcWidth="20.0" />
+                                   <Rectangle fill="WHITE" width="4.0" layoutX="538" layoutY="88" stroke="BLUE" strokeType="INSIDE"  height="31" arcHeight="20.0" arcWidth="20.0" />
+                                  	<Rectangle fill="WHITE" width="4.0" layoutX="548" layoutY="98" stroke="BLUE" strokeType="INSIDE"  height="11" arcHeight="20.0" arcWidth="20.0" />
+                                 	<Rectangle fill="WHITE" width="4.0" layoutX="656" layoutY="135" stroke="RED" strokeType="INSIDE"  height="111" arcHeight="20.0" arcWidth="20.0" /> 
+                                   <Rectangle fill="WHITE" height="4.0" layoutX="508" layoutY="135" stroke="RED" strokeType="INSIDE"  width="150" arcHeight="20.0" arcWidth="20.0" />
+                                   <Rectangle fill="WHITE" height="4.0" layoutX="508" layoutY="242" stroke="RED" strokeType="INSIDE"  width="150" arcHeight="20.0" arcWidth="20.0" />
+                                  
+                                 <Rectangle  fx:id="resistor_0" fill="RED" height="20"  width="50" layoutX="74" layoutY="44" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_0" accessibleRole="TEXT" disable="true" editable="false" layoutX="74" layoutY="44"  text="R0" />
+                                 
+                                 <Rectangle  fx:id="resistor_1" fill="RED" height="20"  width="50" layoutX="204" layoutY="44" stroke="BLACK" strokeType="INSIDE"/>
+                                 <TextField fx:id="txt_resistor_1" accessibleRole="TEXT" disable="true" editable="false" layoutX="204" layoutY="44"  text="R1" />
+                                 
+                                 <Rectangle  fx:id="resistor_2" fill="RED" height="20"  width="50" layoutX="74" layoutY="144" stroke="BLACK" strokeType="INSIDE"/>
+                                    <TextField fx:id="txt_resistor_2" accessibleRole="TEXT" disable="true" editable="false" layoutX="74" layoutY="144"  text="R2" />
+                                 
+                                 <Rectangle  fx:id="resistor_3" fill="RED" height="20"  width="50" layoutX="74" layoutY="286" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_3" accessibleRole="TEXT" disable="true" editable="false" layoutX="74" layoutY="286"  text="R3" />
+                                 
+                                 <Rectangle  fx:id="resistor_4" fill="RED" height="20"  width="50" layoutX="364" layoutY="344" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_4" accessibleRole="TEXT" disable="true" editable="false" layoutX="364" layoutY="344"  text="R4" />
+                                 
+                                 <Rectangle  fx:id="resistor_5" fill="RED" height="20"  width="50" layoutX="364" layoutY="190" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_5" accessibleRole="TEXT" disable="true" editable="false" layoutX="364" layoutY="190"  text="R05" />
+                                 
+                                 
+                                 <Rectangle  fx:id="resistor_6" fill="RED" height="50"  width="20" layoutX="500" layoutY="258" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_6" accessibleRole="TEXT" disable="true" editable="false" layoutX="500" layoutY="258"  text="R6" />
+                                 
+                                 
+                                 
+                                 <Rectangle  fx:id="resistor_7" fill="RED" height="50"  width="20" layoutX="650" layoutY="160" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_7" accessibleRole="TEXT" disable="true" editable="false" layoutX="650" layoutY="160"  text="R7" />
+                                 
+                                 
+                                 <Rectangle  fx:id="resistor_8" fill="RED" height="50"  width="20" layoutX="250" layoutY="370" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_8" accessibleRole="TEXT" disable="true" editable="false" layoutX="250" layoutY="370"  text="R8" />
+                                  
+                                 
+                                 <Rectangle fx:id="resistor_9" fill="RED" height="20"  width="50" layoutX="364" layoutY="440" stroke="BLACK" strokeType="INSIDE"/>
+                                  <TextField fx:id="txt_resistor_9" accessibleRole="TEXT" disable="true" editable="false" layoutX="364" layoutY="440"  text="R9" />
+                                 
+                                 
+                                 
+                                 <Ellipse fx:id="vol_total" fill="GREY" layoutX="13.0" layoutY="110.0" radiusX="15" radiusY="15" stroke="WHITE" strokeType="INSIDE" />
+                                  <TextField fx:id="txt_voltage" accessibleRole="TEXT" disable="true" editable="false" layoutX="4.0" layoutY="100.0"  text="V" />
+                                 
+                                 
+								  <Sphere fx:id="current_1" disable="true" layoutX="350" layoutY="450" radius="10.0"/>
+								   <Sphere fx:id="current_2" disable="true" layoutX="260" layoutY="320" radius="10.0"/>
+								    <Sphere fx:id="current_3" disable="true" layoutX="660" layoutY="150" radius="10.0"/>
+								     <Sphere fx:id="current_4" disable="true" layoutX="510" layoutY="248" radius="10.0"/>
+								     <Sphere fx:id="current_5" disable="true"  layoutX="344" layoutY="200" radius="10.0"/>
+                                  <Sphere fx:id="current_6" disable="true" layoutX="344" layoutY="354" radius="10.0"/>
+                                  <Sphere fx:id="current_7" disable="true" layoutX="44" layoutY="154" radius="10.0"/>
+                                    <Sphere fx:id="current_8" disable="true" layoutX="184" layoutY="54" radius="10.0"/>
+                                                       
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                                 
+   
+    
+     <HBox spacing="10" minHeight="00.0" alignment="CENTER"  AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="15" AnchorPane.rightAnchor="15" AnchorPane.topAnchor="15">
+        <Button text="Add Resistor" prefWidth="150" font="$FONT" onAction="#addResistor" />
+        <Button text="Add Current" prefWidth="150" font="$FONT" onAction="#addCurrent" />
+        </HBox>
+  
+</VBox>

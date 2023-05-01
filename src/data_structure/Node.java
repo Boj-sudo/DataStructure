@@ -1,8 +1,8 @@
 package data_structure;
 
 /**
- * A node in the position list
- * @author TMaboa
+ * A node in the position list (this is just a doubly-linked node)
+ * @author Tsietsi Maboa
  *@param <T> object type for this node
  */
 public class Node<T> implements Position<T> {

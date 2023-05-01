@@ -8,9 +8,9 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-		primaryStage.setTitle("Fixing Load Shedding With Graphs");
-		Scene scene = new Scene(root, 800, 700);
+		Parent root = FXMLLoader.load(getClass().getResource("circuitUI.fxml"));
+		primaryStage.setTitle("Circuit Builder With ADT Graphs");
+		Scene scene = new Scene(root, 1000, 780);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

@@ -1,5 +1,12 @@
 package data_structure;
 
+/**
+ * 
+ * @author Tsietsi Maboa
+ *
+ * @param <K>
+ * @param <V>
+ */
 public class Entry<K, V> {
 
 	private K key;
