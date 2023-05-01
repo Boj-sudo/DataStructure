@@ -1,5 +1,10 @@
 # Trying to fix the load shedding using Data Structure
 
+## Technogies used
+- Java
+- JavaFx
+- Eclipse IDE
+
 ## Introduction
 
 Load shedding is a  measure of last resort to prevent the collapse of power system country-wide.
