@@ -1,10 +1,18 @@
 package load_shedding;
 
 public class NodePath {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	String path_name;
+	
+	public NodePath(String name) {
+		this.path_name = name;
 	}
-
+	
+	public String getPath() {
+		return path_name;
+	}
+	
+	public void setPath(String name) {
+		this.path_name = name;
+	}
 }

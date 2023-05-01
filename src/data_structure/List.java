@@ -1,10 +1,11 @@
 package data_structure;
 
-public class List {
+public interface List<T> {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	T get(Integer i);
+	T remove(Integer i);
+	void set(Integer i, T e);
+	void add(T e);
+	Integer size();
+	boolean isEmpty();
 }

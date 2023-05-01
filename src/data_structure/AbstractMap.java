@@ -36,4 +36,56 @@ public abstract class AbstractMap<K, V> implements IMap<K, V> {
 			return old_value;
 		}
 	}
+	
+	private class keyIterator implements Iterator<K> {
+		private Iterator<MapEntry<K, V>> num_entries = entries().iterator();
+		
+		public boolean hasNext() {
+			return num_entries.hasNext();
+		}
+		
+		public K next() {
+			return num_entries.next().getKey();
+		}
+		
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+	}
+	
+	private class keyIterable implements Iterable<K> {
+		public Iterator<K> iterator() {
+			return new keyIterator();
+		}
+	}
+	
+	public Iterable<K> keys() {
+		return new keyIterable();
+	}
+	
+	private class valueIterator implements Iterator<V> {
+		private Iterator<MapEntry<K, V>> num_entries = entries().iterator();
+		
+		public boolean hasNext() {
+			return num_entries.hasNext();
+		}
+		
+		public V next() {
+			return num_entries.next().getValue();
+		}
+		
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+	}
+	
+	private class valueIterable implements Iterable<V> {
+		public Iterator<V> iterator() {
+			return new valueIterator();
+		}
+	}
+	
+	public Iterable<V> values() {
+		return new valueIterable();
+	}
 }

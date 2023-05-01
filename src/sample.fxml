@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loadshedding.Controller">
+   <children>
+      <AnchorPane prefHeight="579.0" prefWidth="600.0">
+         <children>
+            <VBox layoutX="25.0" layoutY="22.0" prefHeight="440.0" prefWidth="541.0">
+               <children>
+                  <ScrollPane hbarPolicy="ALWAYS" prefHeight="505.0" prefWidth="541.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <AnchorPane prefHeight="422.0" prefWidth="530.0">
+                           <children>
+                              <Rectangle fx:id="veh4" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="238.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh2" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="387.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh3" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="387.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh1" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="391.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh5" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="152.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh6" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="46.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh7" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="46.0" layoutY="239.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Rectangle fx:id="veh0" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="10.0" layoutX="393.0" layoutY="331.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                              <Sphere layoutX="142.0" layoutY="259.0" radius="0.77" />
+                              <TextField fx:id="txt_mine" layoutX="195.0" layoutY="321.0" prefHeight="25.0" prefWidth="102.0" text="Coal Mining" />
+                              <TextField fx:id="truck0" layoutX="403.0" layoutY="321.0" prefHeight="25.0" prefWidth="75.0" text="truck_0" />
+                              <TextField fx:id="truck1" layoutX="403.0" layoutY="229.0" prefHeight="25.0" prefWidth="75.0" text="truck_1" />
+                              <TextField fx:id="truck2" layoutX="398.0" layoutY="121.0" prefHeight="25.0" prefWidth="85.0" text="truck_2" />
+                              <TextField fx:id="truck3" layoutX="396.0" layoutY="34.0" prefHeight="25.0" prefWidth="75.0" text="truck_3" />
+                              <TextField fx:id="truck4" layoutX="248.0" layoutY="109.0" prefHeight="25.0" prefWidth="68.0" text="truck_4" />
+                              <TextField fx:id="truck5" layoutX="165.0" layoutY="37.0" prefHeight="25.0" prefWidth="75.0" text="truck_5" />
+                              <TextField fx:id="truck6" layoutX="56.0" layoutY="106.0" prefHeight="25.0" prefWidth="85.0" text="truck_6" />
+                              <TextField fx:id="truck7" layoutX="56.0" layoutY="232.0" prefHeight="25.0" prefWidth="75.0" text="truck_7" />
+                              <TextField fx:id="txt_sp" layoutX="202.0" layoutY="225.0" prefHeight="25.0" prefWidth="89.0" text="Power Station" />
+                              <Sphere fx:id="unit_1" layoutX="397.0" layoutY="301.0" radius="10.0" />
+                              <Sphere fx:id="unit_2" layoutX="397.0" layoutY="201.0" radius="10.0" />
+                              <Sphere fx:id="unit_4" layoutX="50.0" layoutY="162.0" radius="10.0" />
+                              <Sphere fx:id="unit_3" layoutX="389.0" layoutY="98.0" radius="10.0" />
+                              <Sphere fx:id="unit_0" layoutX="313.0" layoutY="331.0" radius="10.0" />
+                              <Sphere fx:id="unit_5" layoutX="143.0" layoutY="243.0" radius="10.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_addV" text="Add Vertex" />
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_updateV" text="Update Vertex" />
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_remV" text="Remove Vertex" />
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_addE" text="Add Edge" />
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_updateE" text="Update Edge" />
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#btn_remE" text="Remove Edge" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

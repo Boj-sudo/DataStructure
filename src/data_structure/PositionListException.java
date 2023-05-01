@@ -1,10 +1,22 @@
 package data_structure;
 
-public class PositionListException {
+public class PositionListException extends RuntimeException {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private static final Long serialVersionUID = 1L;
+	
+	public PositionListException() {
+		super();
 	}
-
+	
+	public PositionListException(String message) {
+		super(message);
+	}
+	
+	public PositionListException(Throwable cause) {
+		super(cause);
+	}
+	
+	public PositionListException(String message, Throwable cause) {
+		super(cause);
+	}
 }

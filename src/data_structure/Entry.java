@@ -1,10 +1,32 @@
 package data_structure;
 
-public class Entry {
+public class Entry<K, V> {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private K key;
+	private V value;
+	
+	public Entry(K _key, V _value) {
+		this.key = _key;
+		this.value = _value;
 	}
-
+	
+	public K getKey() {
+		return key;
+	}
+	
+	public V getValue() {
+		return value;
+	}
+	
+	public void setKey(K _key) {
+		this.key = _key;
+	}
+	
+	public void setValue(V _value) {
+		this.value = _value;
+	}
+	
+	public String toString() {
+		return key.toString() + "," + value.toString();
+	}
 }
