@@ -12,7 +12,7 @@
 ## Introduction
 The current flow program deals with depicting the structure of an electric circuit and the positioning of the electric components in the circuit.
 It depicts the current flow in parallel and series resistors. Thus, to distinguish between the amount of current flowing into a resistor or number of resistors
-In the electrical field, students  who are oblivious of the structure and the current flow directions this program will be the source.
+In the electrical field, people who are oblivious of the structure and the current flow directions this program will be the source.
 
 
 ## Problem
